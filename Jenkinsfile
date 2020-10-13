@@ -15,6 +15,8 @@ pipeline {
     APPLICATIONNAME="${HOST}:${PORT}"
     EXPERITESTCLOUDNAME="${env.cloudname}"
     EXPERITESTTOKEN="${env.token}"
+    EXPERITESTuser="${env.user}"
+    EXPERITESTpassword="${env.password}"
     NLAPI="${env.neoload_web_API_URL}"
     EXPERITESTJAR="sampleproject-0.0.1-SNAPSHOT.jar"
     ARGUMENT="-Dnl.selenium.proxy.mode=EndUserExperience"
@@ -35,7 +37,7 @@ pipeline {
       steps {
 
 
-            sh "mvn -B clean package  -DapplicationURL=$APPLICATIONNAME -DcloudName=${HEADSPINCLOUDNAME}"
+            sh "mvn -B clean package  -DapplicationURL=$APPLICATIONNAME -DcloudName=${HEADSPINCLOUDNAME} -Dusername=${EXPERITESTuser} -Dpassword=${EXPERITESTpassword}"
 
       }
     }
