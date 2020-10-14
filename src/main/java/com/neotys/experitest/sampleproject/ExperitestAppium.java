@@ -45,8 +45,7 @@ public class ExperitestAppium {
 		user=Utils.fetchuser(user);
 		password="<<password>>";
 		password=Utils.fetchpassword(password);
-		project="<<project>>";
-		project= Utils.fetchProject(project);
+
 		token=Utils.fetchtoken(token);
 		applicationURL=Utils.fetchApplicationURL(applicationURL);
 		DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -56,7 +55,7 @@ public class ExperitestAppium {
 		capabilities.setBrowserName(MobileBrowserType.CHROMIUM);
 		capabilities.setCapability("username", user);
 		capabilities.setCapability("password", password);
-		capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
+		//capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
 		capabilities.setCapability("deviceOrientation", "portrait");
 		capabilities.setCapability("captureScreenshots", true);
 		capabilities.setCapability("reportType", "video");
