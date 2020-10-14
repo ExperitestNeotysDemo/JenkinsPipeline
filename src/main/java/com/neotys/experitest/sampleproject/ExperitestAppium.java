@@ -59,8 +59,6 @@ public class ExperitestAppium {
 		capabilities.setCapability("deviceOrientation", "portrait");
 		capabilities.setCapability("captureScreenshots", true);
 		capabilities.setCapability("reportType", "video");
-		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("deviceName", "HD1907");
         capabilities.setCapability("generateReport", true);
 
 
