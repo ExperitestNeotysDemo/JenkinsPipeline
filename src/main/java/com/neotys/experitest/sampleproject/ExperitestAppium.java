@@ -8,6 +8,7 @@ import com.neotys.selenium.proxies.NLRemoteWebDriver;
 import com.neotys.selenium.proxies.NLWebDriverFactory;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileBrowserType;
 import org.junit.Before;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -54,6 +55,8 @@ public class ExperitestAppium {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("accessKey", token);
 		capabilities.setCapability("testName", "NeoLoad KonaKart");
+		capabilities.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
+		capabilities.setBrowserName(MobileBrowserType.CHROMIUM);
 		capabilities.setCapability("username", user);
 		capabilities.setCapability("password", password);
 		capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
