@@ -20,8 +20,8 @@ pipeline {
     ARGUMENT="-Dnl.selenium.proxy.mode=EndUserExperience"
     CONTROLLER="docker-ctl1"
 
-    GROUP="NeotysExperitest"
-    APP_NAME="PipelineExample"
+    GROUP="ExperitestNeotysDemo"
+    APP_NAME="JenkinsPipeline"
   }
   stages {
      stage('Checkout') {
