@@ -18,11 +18,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 
-import io.appium.java_client.AppiumDriver;
 
-import javax.rmi.CORBA.Util;
 
 public class ExperitestAppium {
 	RemoteWebDriver wb;
