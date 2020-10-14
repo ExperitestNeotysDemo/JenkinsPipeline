@@ -13,7 +13,7 @@ pipeline {
     APPLICATIONNAME="${HOST}:${PORT}"
     EXPERITESTCLOUDNAME="${env.cloudname}"
     EXPERITESTTOKEN="${env.token}"
-    EXPERITESTuser="${env.user}"
+    EXPERITESTuser="${env.username}"
     EXPERITESTpassword="${env.password}"
     NLAPI="${env.neoload_web_API_URL}"
     EXPERITESTJAR="sampleproject-0.0.1-SNAPSHOT.jar"
