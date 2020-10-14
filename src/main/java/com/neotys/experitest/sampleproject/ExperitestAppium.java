@@ -56,8 +56,6 @@ public class ExperitestAppium {
 		capabilities.setCapability("username", user);
 		capabilities.setCapability("password", password);
 		//capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
-		capabilities.setCapability("deviceOrientation", "portrait");
-		capabilities.setCapability("captureScreenshots", true);
 		capabilities.setCapability("reportType", "video");
         capabilities.setCapability("generateReport", true);
 
