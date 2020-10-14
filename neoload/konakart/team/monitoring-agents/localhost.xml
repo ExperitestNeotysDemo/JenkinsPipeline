@@ -1,5 +1,5 @@
 <me-host citrixSupport="false" loadWeight="1" sapSupport="false"
-    standalone="false" supportWANEmulation="false" uid="localhost" version="7.4.0;build=20200528-24">
+    standalone="false" supportWANEmulation="false" uid="localhost" version="7.5.0;build=20200730-20">
     <!--****** LG NETWORK INTERFACES ******-->
     <lg-networkiface description="wlp2s0" enabled="false"
         isLoopBack="false" name="wlp2s0">

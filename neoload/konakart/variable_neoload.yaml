@@ -1,7 +1,7 @@
 name: Perfecto_webinar_neoload
 variables:
 - constant:
-    name: KobitonJar
+    name: ExperitestJar
     value: JAR_TO_REPLACE
 - constant:
     name: server
@@ -21,4 +21,12 @@ variables:
 - constant:
     name: ControllerIp
     value: IP_TO_REPLACE
-
+- constant:
+    name: token
+    value: TOKEN_TO_REPLACE
+- constant:
+    name: user
+    value: USER_TO_REPLACE
+- constant:
+    name: password
+    value: PASSWORD_TO_REPLACE

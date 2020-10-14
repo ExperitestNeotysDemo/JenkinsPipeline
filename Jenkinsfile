@@ -1,5 +1,3 @@
-
-
 pipeline {
   agent  { label 'master' }
 
@@ -37,7 +35,7 @@ pipeline {
       steps {
 
 
-            sh "mvn -B clean package  -DapplicationURL=$APPLICATIONNAME -DcloudName=${HEADSPINCLOUDNAME} -Dusername=${EXPERITESTuser} -Dpassword=${EXPERITESTpassword}"
+            sh "mvn -B clean package  -DapplicationURL=$APPLICATIONNAME -Dtoken=${EXPERITESTTOKEN} -DcloudName=${EXPERITESTCLOUDNAME} -Dusername=${EXPERITESTuser} -Dpassword=${EXPERITESTpassword}"
 
       }
     }
@@ -89,9 +87,11 @@ pipeline {
                               sh "sed -i 's/PORT_TO_REPLACE/${PORT}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
                               sh "sed -i 's/JAR_TO_REPLACE/${EXPERITESTJAR}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
                               sh "sed -i 's/ARGUMENT_TO_REPLACE/${ARGUMENT}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
-                              sh "sed -i 's/TOKEN_TO_REPLACE/${APPLICATIONNAME}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
+                              sh "sed -i 's/TOKEN_TO_REPLACE/${EXPERITESTTOKEN}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
                               sh "sed -i 's/IP_TO_REPLACE/${CONTROLLER}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
-                              sh "sed -i 's/CLOUD_TO_REPLACE/${EXPERITESTCLOUDNAME}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
+                              sh "sed -i 's,CLOUD_TO_REPLACE/${EXPERITESTCLOUDNAME},'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
+                              sh "sed -i 's/USER_TO_REPLACE/${EXPERITESTuser}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
+                              sh "sed -i 's/PASSWORD_TO_REPLACE/${EXPERITESTpassword}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
 
                               sh """
                                      export PATH=~/.local/bin:$PATH

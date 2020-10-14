@@ -1,5 +1,5 @@
-<population uid="Kobiton">
-    <split cache="1" factor="100.0" virtualUserUid="Kobiton">
+<population uid="Experitest">
+    <split cache="1" factor="100.0" virtualUserUid="Experitest">
         <browser-profile acceptEncoding="GZIP,DEFLATE,BROTLI"
             connections="6" cookies="true" http2="true" name="browser.recorded"/>
         <wan-emulation-profile

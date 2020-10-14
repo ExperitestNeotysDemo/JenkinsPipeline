@@ -1,6 +1,6 @@
 <lg-host citrixSupport="false" hostname="localhost:7100" loadWeight="1"
     sapSupport="false" standalone="false" supportWANEmulation="false"
-    uid="b04e30b8-b499-4ff6-8290-2fe5cd5e86f9" version="7.4.0;build=20200528-24">
+    uid="b04e30b8-b499-4ff6-8290-2fe5cd5e86f9" version="7.5.0;build=20200730-20">
     <!--****** LG NETWORK INTERFACES ******-->
     <lg-networkiface description="wlp2s0" enabled="false"
         isLoopBack="false" name="wlp2s0">
