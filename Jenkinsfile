@@ -31,7 +31,7 @@ pipeline {
                       credentialsId :'gituser'
           }
       }
-    stage('Launch Appium Scripts on HeadSpin') {
+    stage('Launch Appium Scripts on Experitest') {
       steps {
 
 
