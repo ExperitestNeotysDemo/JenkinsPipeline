@@ -52,9 +52,9 @@ public class ExperitestAppium {
 		capabilities.setCapability("accessKey", token);
 		capabilities.setCapability("testName", "NeoLoad KonaKart");
 		capabilities.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
-		capabilities.setBrowserName(MobileBrowserType.CHROMIUM);
-		capabilities.setCapability("username", user);
-		capabilities.setCapability("password", password);
+		//capabilities.setBrowserName(MobileBrowserType.CHROMIUM);
+		//capabilities.setCapability("username", user);
+		//capabilities.setCapability("password", password);
 		//capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
 		capabilities.setCapability("reportType", "video");
         capabilities.setCapability("generateReport", true);
