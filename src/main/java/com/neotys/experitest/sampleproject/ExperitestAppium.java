@@ -97,15 +97,17 @@ public class ExperitestAppium {
 	public void appiumTest() throws Exception {
 
 		//----enable vitals metrics---
+		String networkProfile="<<networkprofile>>";
+		networkProfile=Utils.fetchNetworkProfile(networkProfile);
 
-		driver.executeScript("seetest:client.startPerformanceTransaction(\"Navigate to Konakart.com\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Navigate to Konakart.com");
 		driver.get("http://"+applicationURL);
 		driver.stopTransaction();
 		driver.executeScript("seetest:client.endPerformanceTransaction(\"Navigate to Konakart.com\")");
 
 
-		driver.executeScript("seetest:client.startPerformanceTransaction(\"Search for Comptuer\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Search for Comptuer");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
@@ -124,7 +126,7 @@ public class ExperitestAppium {
 		driver.stopTransaction();
 		driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Comptuer\")");
 
-		driver.executeScript("seetest:client.startPerformanceTransaction(\"Search for Phone\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 		driver.startTransaction("Search for phone");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
@@ -142,7 +144,7 @@ public class ExperitestAppium {
 		driver.stopTransaction();
 		driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Phone\")");
 
-		driver.executeScript("seetest:client.startPerformanceTransaction(\"Search for Game\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 		driver.startTransaction("Search for game");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));

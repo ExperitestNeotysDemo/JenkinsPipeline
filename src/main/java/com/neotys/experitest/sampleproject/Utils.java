@@ -28,6 +28,16 @@ public class Utils {
 			return finalCloudName;
 	}
 
+	public static String fetchNetworkProfile(String token) throws Exception {
+		//Verifies if cloudName is hardcoded, else loads from Maven properties
+		String networkprofile = token.equalsIgnoreCase("<<networkprofile>>") ? System.getProperty("networkprofile") : token;
+		//then "" cloudName isnt passed:
+		if(networkprofile == null || networkprofile.equalsIgnoreCase("<<networkprofile>>"))
+			return "";
+		else
+			return networkprofile;
+	}
+
 	public static String fetchuser(String user) throws Exception {
 		//Verifies if cloudName is hardcoded, else loads from Maven properties
 		String finalCloudName = user.equalsIgnoreCase("<<username>>") ? System.getProperty("username") : user;
