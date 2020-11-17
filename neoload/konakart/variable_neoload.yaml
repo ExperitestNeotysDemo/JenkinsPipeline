@@ -14,7 +14,7 @@ variables:
     value: ARGUMENT_TO_REPLACE
 - constant:
     name: applicationURL
-    value: TOKEN_TO_REPLACE
+    value: URL_TO_REPLACE
 - constant:
     name: cloudname
     value: CLOUD_TO_REPLACE

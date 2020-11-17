@@ -92,6 +92,7 @@ pipeline {
                               sh "sed -i 's,CLOUD_TO_REPLACE/${EXPERITESTCLOUDNAME},'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
                               sh "sed -i 's/USER_TO_REPLACE/${EXPERITESTuser}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
                               sh "sed -i 's/PASSWORD_TO_REPLACE/${EXPERITESTpassword}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
+                              sh "sed -i 's/URL_TO_REPLACE/${APPLICATIONNAME}/'  $WORKSPACE/neoload/konakart/variable_neoload.yaml"
 
                               sh """
                                      export PATH=~/.local/bin:$PATH
