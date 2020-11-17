@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
 public class ExperitestAppium {
 	AndroidDriver wb;
 	NLRemoteWebDriver driver;
-	String openSearch = "//*[@id='open-search']";
+	String openSearch = "//*[@id=\'open-search\']";
 	String searchField = "//*[@id=\'search-input-mobile\']";
 	String searchSubmit = "//*[@id=\'search-button-mobile\']";
 
@@ -81,10 +81,10 @@ public class ExperitestAppium {
 
 	}
 
-	public boolean createSession(Capabilities capabilities, String cloudname,String projectname) throws Exception,SessionNotCreatedException {
+	public boolean createSession(Capabilities capabilities, String cloudname,String projectname) throws Exception {
 		boolean result=false;
 		wb = new AndroidDriver(new URL("https://" + Utils.fetchCloudName(cloudname)  + "wd/hub"), capabilities);
-		driver = (NLRemoteWebDriver) NLWebDriverFactory.newNLWebDriver(wb, "KonaKart Android", projectname);
+		driver = NLWebDriverFactory.newNLWebDriver(wb, "KonaKart Android", projectname);
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
