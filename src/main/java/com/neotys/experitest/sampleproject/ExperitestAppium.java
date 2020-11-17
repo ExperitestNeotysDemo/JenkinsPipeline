@@ -111,17 +111,17 @@ public class ExperitestAppium {
 		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Search for Comptuer");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
 		WebElement element=driver.findElement(By.xpath((openSearch)));
 		element.click();
 
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
 		element=driver.findElement(By.xpath((searchField)));
 		element.clear();
 		element.sendKeys("book");
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
 		element=driver.findElement(By.xpath((searchSubmit)));
 		element.click();
 		driver.stopTransaction();
@@ -130,16 +130,16 @@ public class ExperitestAppium {
 		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 		driver.startTransaction("Search for phone");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
 		element=driver.findElement(By.xpath((openSearch)));
 		element.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
 		element=driver.findElement(By.xpath((searchField)));
 		element.clear();
 		element.sendKeys("phone");
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
 		element=driver.findElement(By.xpath((searchSubmit)));
 		element.click();
 		driver.stopTransaction();
@@ -148,16 +148,16 @@ public class ExperitestAppium {
 		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 		driver.startTransaction("Search for game");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
 		element=driver.findElement(By.xpath((openSearch)));
 		element.click();
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchField)));
 		element=driver.findElement(By.xpath((searchField)));
 		element.clear();
 		element.sendKeys("game");
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
+      //  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(searchSubmit)));
 		element=driver.findElement(By.xpath((searchSubmit)));
 		element.click();
 		driver.stopTransaction();
