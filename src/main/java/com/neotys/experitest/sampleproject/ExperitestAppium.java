@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
 public class ExperitestAppium {
 	AndroidDriver wb;
 	NLRemoteWebDriver driver;
-	String openSearch = "//*[@id=\'open-search\']";
+	String openSearch = "//*[@id='open-search']";
 	String searchField = "//*[@id=\'search-input-mobile\']";
 	String searchSubmit = "//*[@id=\'search-button-mobile\']";
 
