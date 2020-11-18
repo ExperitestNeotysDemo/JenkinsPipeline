@@ -100,16 +100,16 @@ public class ExperitestAppium {
 		//----enable vitals metrics---
 		String networkProfile="<<networkprofile>>";
 		networkProfile=Utils.fetchNetworkProfile(networkProfile);
-
-		//driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
+		wb.context("WEBVIEW_1");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Navigate to Konakart.com");
 		driver.get("http://"+applicationURL);
 		driver.stopTransaction();
-//		driver.executeScript("seetest:client.endPerformanceTransaction(\"Navigate to Konakart.com\")");
+		driver.executeScript("seetest:client.endPerformanceTransaction(\"Navigate to Konakart.com\")");
 
 		wb.context("WEBVIEW_1");
 
-//		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Search for Comptuer");
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
@@ -126,9 +126,9 @@ public class ExperitestAppium {
 		element=driver.findElement(By.xpath((searchSubmit)));
 		element.click();
 		driver.stopTransaction();
-		//driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Comptuer\")");
+		driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Comptuer\")");
 
-		//driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 		driver.startTransaction("Search for phone");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(openSearch)));
@@ -144,9 +144,9 @@ public class ExperitestAppium {
 		element=driver.findElement(By.xpath((searchSubmit)));
 		element.click();
 		driver.stopTransaction();
-		//driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Phone\")");
+		driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Phone\")");
 
-		//driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
+		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 
 
 		driver.startTransaction("Search for game");
@@ -164,7 +164,7 @@ public class ExperitestAppium {
 		element.click();
 		driver.stopTransaction();
 
-		//driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Game\")");
+		driver.executeScript("seetest:client.endPerformanceTransaction(\"Search for Game\")");
 
 		driver.close();
 		driver.quit();
