@@ -98,7 +98,7 @@ pipeline {
                                      export PATH=~/.local/bin:$PATH
                                      neoload \
                                      login --url ${NLAPI} ${NL_API_TOKEN} \
-                                     test-settings  --zone $ZONE --scenario Experitest_load_webinar use ExperitestWebinar \
+                                     test-settings  --zone $ZONE --scenario Experitest_load_webinar patch ExperitestWebinar \
                                      project --path $WORKSPACE/neoload/konakart/ upload
                                 """
                             }
