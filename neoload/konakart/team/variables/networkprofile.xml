@@ -1,0 +1,4 @@
+<variable-list name="networkprofile" offset="1" order="2" policy="1" range="1" uid="e931d779-1d25-4dd8-b91d-4980520152b0" whenOutOfValues="CYCLE_VALUES">
+<column name="network" number="0"/>
+<values><![CDATA[rO0ABXVyABRbW0xqYXZhLmxhbmcuU3RyaW5nOzJNCa2EMuRXAgAAeHAAAAAIdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQAETNHLWJhZC1jb25uZWN0aW9udXEAfgACAAAAAXQADzNHLUhpZ2gtTGF0ZW5jeXVxAH4AAgAAAAF0AAgzRy1Mb3NzeXVxAH4AAgAAAAF0AAozRy1hdmVyYWdldXEAfgACAAAAAXQAETRHLWJhZC1jb25uZWN0aW9udXEAfgACAAAAAXQADzRHLUhpZ2gtTGF0ZW5jeXVxAH4AAgAAAAF0AAg0Ry1Mb3NzeXVxAH4AAgAAAAF0AAo0Ry1hdmVyYWdl]]></values>
+</variable-list>
