@@ -85,6 +85,7 @@ public class ExperitestAppium {
 	public boolean createSession(Capabilities capabilities, String cloudname,String projectname) throws Exception {
 		boolean result=false;
 		wb = new AndroidDriver(new URL("https://" + Utils.fetchCloudName(cloudname)  + "wd/hub"), capabilities);
+		wb.context("WEBVIEW_1");
 		driver = NLWebDriverFactory.newNLWebDriver(wb, "KonaKart Android", projectname);
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
