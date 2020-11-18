@@ -85,7 +85,7 @@ public class ExperitestAppium {
 	public boolean createSession(Capabilities capabilities, String cloudname,String projectname) throws Exception {
 		boolean result=false;
 		wb = new AndroidDriver(new URL("https://" + Utils.fetchCloudName(cloudname)  + "wd/hub"), capabilities);
-		wb.context("WEBVIEW");
+
 		driver = NLWebDriverFactory.newNLWebDriver(wb, "KonaKart Android", projectname);
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -108,6 +108,7 @@ public class ExperitestAppium {
 		driver.stopTransaction();
 		driver.executeScript("seetest:client.endPerformanceTransaction(\"Navigate to Konakart.com\")");
 
+		wb.context("WEBVIEW");
 
 		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Search for Comptuer");
