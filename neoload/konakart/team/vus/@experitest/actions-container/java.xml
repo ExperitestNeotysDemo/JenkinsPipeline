@@ -7,9 +7,9 @@ Possible parameters are:
 - argX: Java argument number X (eg: arg1, arg2, ...)
 - charset: The charset used by the console. Default platform charset is used if not set.</description>
     <custom-action-parameter name="JRE" type="TEXT" value="jre/bin/java"/>
-    <custom-action-parameter name="arg9" type="TEXT" value="-cp"/>
-    <custom-action-parameter name="arg10" type="TEXT" value="${NL-CustomResources}/${ExperitestJar}"/>
-    <custom-action-parameter name="arg11" type="TEXT" value="com.neotys.experitest.sampleproject.EndUserExperienceTestSuite"/>
+    <custom-action-parameter name="arg8" type="TEXT" value="-cp"/>
+    <custom-action-parameter name="arg9" type="TEXT" value="${NL-CustomResources}/${ExperitestJar}"/>
+    <custom-action-parameter name="arg10" type="TEXT" value="com.neotys.experitest.sampleproject.EndUserExperienceTestSuite"/>
     <custom-action-parameter name="arg1" type="TEXT" value="${argument}"/>
     <custom-action-parameter name="arg2" type="TEXT" value="-DapplicationURL=${applicationURL}"/>
     <custom-action-parameter name="arg3" type="TEXT" value="-DcloudName=${cloudname}"/>
@@ -17,6 +17,5 @@ Possible parameters are:
     <custom-action-parameter name="arg5" type="TEXT" value="-Dtoken=${token}"/>
     <custom-action-parameter name="arg6" type="TEXT" value="-Dusername=${user}"/>
     <custom-action-parameter name="arg7" type="TEXT" value="-Dpassword=${password}"/>
-    <custom-action-parameter name="arg8" type="TEXT" value="-Dnetworkprofile=${networkprofile}"/>
     <responsePageFileDescription>recorded-responses/res_28e3588c-dd73-4b57-92ef-fa207610539f</responsePageFileDescription>
 </custom-action>
