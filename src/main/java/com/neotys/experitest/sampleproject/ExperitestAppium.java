@@ -107,7 +107,7 @@ public class ExperitestAppium {
 		driver.stopTransaction();
 		driver.executeScript("seetest:client.endPerformanceTransaction(\"Navigate to Konakart.com\")");
 
-		wb.context("CHROMIUM");
+		wb.context("WEBVIEW_1");
 
 		driver.executeScript("seetest:client.startPerformanceTransaction(\""+networkProfile+"\")");
 		driver.startTransaction("Search for Comptuer");
