@@ -58,7 +58,6 @@ public class ExperitestAppium {
 		//capabilities.setCapability("projectName", project); //only required if your user has several projects assigned to it. Otherwise, exclude this capability.
 		capabilities.setCapability("reportType", "video");
         capabilities.setCapability("generateReport", true);
-		capabilities.setBrowserName(MobileBrowserType.CHROMIUM);
 
 
 
