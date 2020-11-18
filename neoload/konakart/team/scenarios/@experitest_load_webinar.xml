@@ -1,6 +1,6 @@
 <scenario postMonitoringTime="-1" preMonitoringTime="-1"
     slaProfileEnabled="false" traceVariables="true"
-    uid="konakart_load_webinar" virtualUsersStates="true">
+    uid="Experitest_load_webinar" virtualUsersStates="true">
     <!--****** POPULATION POLICY ******-->
     <population-policy name="Retail">
         <duration-policy-entry iterations="1" time="900" timeUnit="0" type="2"/>
